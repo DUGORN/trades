@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Scanner</title>
+    <style>
+        body {
+            background-color: #0b0e11;
+            color: #eaecef;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #f0b90b;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #1e2329;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #848e9c;
+        }
+        .long { border-left-color: #0ecb81; }
+        .short { border-left-color: #f6465d; }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .symbol { font-size: 1.2em; font-weight: bold; }
+        .score { 
+            background: #2b3139; 
+            padding: 5px 10px; 
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #848e9c;
+            margin-bottom: 15px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .btn-tv { background-color: #2962ff; color: white; }
+        .btn-ai { background-color: #8e44ad; color: white; }
+        .btn-binance { background-color: #f0b90b; color: black; }
+    </style>
+</head>
+<body>
+
+    <h2>🏆 TOP CRYPTO SETUPS</h2>
+
+    {% for setup in setups %}
+    <div class="card {{ 'long' if setup.direction == 'LONG' else 'short' if setup.direction == 'SHORT' else '' }}">
+        <div class="header">
+            <span class="symbol">{{ setup.symbol }}</span>
+            <span class="score">Score: {{ setup.score }}</span>
+        </div>
+        
+        <div class="info">
+            <span>🎯 {{ setup.direction }}</span>
+            <span>💰 {{ setup.price }}</span>
+            <span> {{ setup.distance }}%</span>
+        </div>
+
+        <div class="buttons">
+            <a href="https://www.tradingview.com/chart/?symbol=BINANCE:{{ setup.symbol.replace('.P', '') }}" class="btn btn-tv" target="_blank">📊 ดูกราฟ</a>
+            <a href="https://gemini.google.com/app" class="btn btn-ai" target="_blank">🤖 ถาม AI</a>
+            <a href="https://www.binance.com/en/futures/{{ setup.symbol.replace('.P', '') }}" class="btn btn-binance" target="_blank">💸 เทรด</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <p style="text-align: center; color: #848e9c; font-size: 0.8em; margin-top: 20px;">
+        Refresh หน้าเว็บเพื่ออัปเดตข้อมูล
+    </p>
+
+</body>
+</html>

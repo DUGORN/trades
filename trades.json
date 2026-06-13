@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026-06-12 00:01:25",
+    "symbol": "xlmusdt.p",
+    "direction": "SHORT",
+    "result": "WIN",
+    "profit_loss": "+$7.69",
+    "notes": "As planned win in TP2"
+  },
+  {
+    "date": "2026-06-12 10:41:19",
+    "symbol": "CRVUSDT.P",
+    "direction": "SHORT",
+    "result": "WIN",
+    "profit_loss": "+$10.11",
+    "notes": "brakehight"
+  },
+  {
+    "date": "2026-06-12 19:15:30",
+    "symbol": "crvusdt.p",
+    "direction": "SHORT",
+    "result": "WIN",
+    "profit_loss": "+$1.10",
+    "notes": ""
+  },
+  {
+    "date": "2026-06-12 19:16:05",
+    "symbol": "crvusdt.p",
+    "direction": "SHORT",
+    "result": "WIN",
+    "profit_loss": "+$3.77",
+    "notes": ""
+  },
+  {
+    "date": "2026-06-12 19:16:34",
+    "symbol": "xplusdt.p",
+    "direction": "SHORT",
+    "result": "WIN",
+    "profit_loss": "+3.09",
+    "notes": ""
+  },
+  {
+    "date": "2026-06-12 19:17:02",
+    "symbol": "xplusdt.p",
+    "direction": "SHORT",
+    "result": "WIN",
+    "profit_loss": "+3.65",
+    "notes": ""
+  }
+]

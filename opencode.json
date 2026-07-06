@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "tv-mcp": {
+      "type": "local",
+      "command": ["node", "C:\\tv-mcp\\src\\server.js"],
+      "enabled": true,
+      "env": {
+        "TRADINGVIEW_DEBUG_PORT": "9222"
+      }
+    },
+    "deepseek": {
+      "type": "local",
+      "command": ["npx", "-y", "@arikusi/deepseek-mcp-server"],
+      "enabled": true,
+      "env": {
+        "DEEPSEEK_API_KEY": "YOUR_DEEPSEEK_API_KEY_HERE"
+      }
+    }
+  }
+}

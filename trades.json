@@ -39,5 +39,15 @@
     "screenshot": "None",
     "notes": "None",
     "timestamp": "2026-06-13T20:52:24.440403"
+  },
+  {
+    "pair": "NMRUSDT.P",
+    "side": "SHORT",
+    "entry_price": 10.0293,
+    "exit_price": 10.00,
+    "pnl": 19.87,
+    "pnl_percentage": 0.29,
+    "exit_reason": "SL_Breakeven",
+    "timestamp": "2026-07-07T14:30:00.000000"
   }
 ]

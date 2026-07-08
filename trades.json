@@ -49,5 +49,12 @@
     "pnl_percentage": 0.29,
     "exit_reason": "SL_Breakeven",
     "timestamp": "2026-07-07T14:30:00.000000"
+  },
+  {
+    "pair": "TRXUSDT.P",
+    "side": "SHORT",
+    "entry_price": 0.33068,
+    "position_size": 1069.16,
+    "timestamp": "2026-07-07T14:45:00.000000"
   }
 ]

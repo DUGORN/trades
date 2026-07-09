@@ -56,5 +56,12 @@
     "entry_price": 0.33068,
     "position_size": 1069.16,
     "timestamp": "2026-07-07T14:45:00.000000"
+  },
+  {
+    "pair": "MANAUSDT.P",
+    "side": "SHORT",
+    "entry_price": 0.0741448,
+    "position_size": 264.47,
+    "timestamp": "2026-07-07T15:20:00.000000"
   }
 ]
